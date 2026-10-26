@@ -3,6 +3,6 @@ default:
   outputs:
     fabric:
       type: fabric
-      workspace: TNL26
+      workspace: T26NL
       database: dwh
       schema: dbt
