@@ -6,3 +6,4 @@ logs/
 .user.yml
 profiles.yml
 .DS_Store
+__pycache__/

@@ -14,7 +14,7 @@ dispatch:
   - macro_namespace: dbt_utils
     search_order: ['dbt', 'dbt_utils']
   - macro_namespace: dbt_date
-    search_order: ['dbt', 'dbt_date']
+    search_order: ['dbt_fabric_demo_sam_debruyn', 'dbt', 'dbt_date']
 
 snapshots:
   target_schema: "{{ target.schema}}_snap"

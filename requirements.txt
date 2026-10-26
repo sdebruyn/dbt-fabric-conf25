@@ -1,2 +1,0 @@
-dbt-fabric-samdebruyn>=1.12.2
-dbt-core>=1.12.6
