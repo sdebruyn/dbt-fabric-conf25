@@ -24,6 +24,11 @@
   {{ fabric_date_series(datepart, start_date, end_date) }}
 {% endmacro %}
 
+{% macro fabric__get_date_dimension(start_date, end_date) %}
+  {% set date_dimension_sql = dbt_date.default__get_date_dimension(start_date, end_date) %}
+  {{ return(date_dimension_sql | replace('order by 1', '')) }}
+{% endmacro %}
+
 {% macro fabric__get_base_dates(start_date, end_date, n_dateparts, datepart) %}
   {% if start_date and end_date %}
     {% set start_date = "cast('" ~ start_date ~ "' as " ~ dbt.type_timestamp() ~ ")" %}
