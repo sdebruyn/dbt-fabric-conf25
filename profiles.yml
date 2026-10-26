@@ -4,5 +4,8 @@ default:
     fabric:
       type: fabric
       workspace: T26NL
+      driver: ODBC Driver 18 for SQL Server
+      host: m7awjeefjdxubhzudbjsdcxkqy-pf4o6yl72ypejg4q2iwkbmov4q.datawarehouse.fabric.microsoft.com
+      authentication: auto
       database: dwh
       schema: dbt

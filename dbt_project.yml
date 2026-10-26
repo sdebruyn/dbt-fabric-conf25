@@ -3,18 +3,13 @@ version: '1.0.0'
 config-version: 2
 profile: 'default'
 
-vars:
-  "dbt_date:time_zone": "W. Europe Standard Time"
-
 dispatch:
   - macro_namespace: dbt_expectations
     search_order: ['dbt', 'dbt_expectations']
   - macro_namespace: audit_helper
     search_order: ['dbt', 'audit_helper']
   - macro_namespace: dbt_utils
-    search_order: ['dbt', 'dbt_utils']
-  - macro_namespace: dbt_date
-    search_order: ['dbt_fabric_demo_sam_debruyn', 'dbt', 'dbt_date']
+    search_order: ['dbt_fabric_demo_sam_debruyn', 'dbt', 'dbt_utils']
 
 snapshots:
   target_schema: "{{ target.schema}}_snap"
