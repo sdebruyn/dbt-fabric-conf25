@@ -3,8 +3,6 @@ default:
   outputs:
     fabric:
       type: fabric
-      driver: "ODBC Driver 18 for SQL Server"
-      workspace: dbt-dev-we
-      database: demoprep
-      schema: dbt_sam
-      lakehouse: demopreplh
+      workspace: TNL26
+      database: dwh
+      schema: dbt
